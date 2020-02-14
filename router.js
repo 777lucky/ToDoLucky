@@ -6,7 +6,7 @@ const user = require('./controllers/userscontroller.js');
 const authenticate = require('./middlewares/authenticate.js');
 
 //Create Task
-router.post('/tasks/post', authenticate, task.create)
+router.post('/tasks/create', authenticate, task.create)
 
 //Show Task
 router.get('/tasks/show', authenticate, task.show_all)
